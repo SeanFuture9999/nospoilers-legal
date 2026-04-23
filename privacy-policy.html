@@ -1,323 +1,327 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - NoSpoilers</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #f9f9f9;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #222;
-        }
-        .update-date {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-        h2 {
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #222;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #eee;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #666;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            color: #333;
-        }
-        .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background: #f5f5f5;
-            border-radius: 6px;
-        }
-        .lang-switch {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .lang-switch a {
-            margin-right: 15px;
-            color: #666;
-            text-decoration: none;
-        }
-        .lang-switch a.active {
-            color: #333;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — 我在仙界撿了屍 / Immortal Pickup!</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", Roboto, sans-serif;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    color: #1f2937;
+    background: #f9fafb;
+    line-height: 1.7;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 48px 56px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin-top: 36px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  h3 { font-size: 16px; margin-top: 20px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 28px; }
+  .back { color: #6b7280; font-size: 14px; text-decoration: none; }
+  .back:hover { text-decoration: underline; }
+  .lang-switch { margin: 20px 0 28px; padding-bottom: 18px; border-bottom: 1px solid #e5e7eb; }
+  .lang-switch button {
+    background: none; border: none; padding: 4px 12px; cursor: pointer;
+    font-size: 14px; color: #6b7280;
+  }
+  .lang-switch button.active { color: #111; font-weight: 700; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  .hidden { display: none; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; }
+  th { background: #f3f4f6; }
+  .contact-box {
+    background: #f3f4f6; border-left: 3px solid #6366f1;
+    padding: 16px 20px; border-radius: 4px; margin: 16px 0;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">Back to Home</a>
+<div class="card">
+  <a class="back" href="./">&larr; Back to Home</a>
 
-        <h1>Privacy Policy</h1>
-        <p class="update-date">Last Updated: April 3, 2026</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last Updated: April 24, 2026</p>
 
-        <div class="lang-switch">
-            <a href="#en" class="active">English</a>
-            <a href="#zh">Chinese</a>
-        </div>
+  <div class="lang-switch">
+    <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+    <button id="btn-zh" onclick="showLang('zh')">中文</button>
+  </div>
 
-        <!-- English Version -->
-        <div id="en">
-            <p>NoSpoilers ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our mobile applications and services (collectively, the "Services").</p>
+  <!-- ================= ENGLISH ================= -->
+  <section id="lang-en">
 
-            <p>By using our Services, you agree to the collection and use of information in accordance with this policy.</p>
+    <p>This Privacy Policy applies to the mobile application <strong>Immortal Pickup!</strong> (Chinese title: <strong>我在仙界撿了屍</strong>; package name: <code>com.pickupfairy.game</code>), developed, published, and operated by <strong>proofhero888</strong> ("we", "our", or "us"). By downloading, installing, or using the application (the "Services"), you agree to the collection and use of information as described in this Privacy Policy.</p>
 
-            <h2>1. Information We Collect</h2>
+    <h2>1. Information We Collect</h2>
 
-            <p><strong>1.1 Information Collected Automatically</strong></p>
-            <p>When you use our Services, we may automatically collect certain information, including:</p>
-            <ul>
-                <li>Device information (device model, operating system version, unique device identifiers)</li>
-                <li>Usage data (app features used, session duration, in-app actions)</li>
-                <li>Advertising identifiers (such as Google Advertising ID)</li>
-                <li>IP address and general location (country or city level)</li>
-                <li>App crash logs, error reports, and performance data</li>
-            </ul>
+    <h3>1.1 Information Collected Automatically</h3>
+    <p>When you use the Services, the following information may be collected automatically:</p>
+    <ul>
+      <li>Device information (device model, operating system, language, screen resolution)</li>
+      <li>Unique advertising identifiers (Google Advertising ID)</li>
+      <li>Application usage data (sessions, feature interactions, in-app events, gameplay progress)</li>
+      <li>Application crash reports, error logs, and performance metrics</li>
+      <li>General network information (IP address, which may be used to derive approximate country/region)</li>
+    </ul>
 
-            <p><strong>1.2 Information You Provide</strong></p>
-            <p>We may collect information you voluntarily provide, such as:</p>
-            <ul>
-                <li>In-app purchase records</li>
-                <li>Customer support inquiries</li>
-                <li>Feedback and survey responses</li>
-            </ul>
+    <h3>1.2 Information You Provide</h3>
+    <p>The Services do not require account registration. You may provide information voluntarily by:</p>
+    <ul>
+      <li>Contacting us by email for support, feedback, or account deletion requests</li>
+      <li>Completing an in-app purchase via Google Play Billing</li>
+    </ul>
 
-            <h2>2. How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li>To provide and maintain our Services</li>
-                <li>To process in-app purchases and transactions</li>
-                <li>To display advertisements (including personalized ads)</li>
-                <li>To analyze usage patterns and improve our Services</li>
-                <li>To identify and fix crashes and technical issues</li>
-                <li>To detect and prevent fraud or abuse</li>
-                <li>To respond to customer support requests</li>
-                <li>To comply with legal obligations</li>
-            </ul>
+    <h3>1.3 Local-Only Game Data</h3>
+    <p>Your gameplay progress (cultivation realm, inventory, skill library, pet collection, settings, etc.) is stored <strong>only on your device</strong>. We do not upload or retain a copy on our servers.</p>
 
-            <h2>3. Third-Party Services</h2>
-            <p>Our Services use the following third-party services that may collect information:</p>
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To operate, maintain, and improve the Services</li>
+      <li>To analyze gameplay patterns, balance the game, and prioritize future updates</li>
+      <li>To diagnose crashes and fix bugs</li>
+      <li>To deliver and measure the performance of rewarded advertisements</li>
+      <li>To process in-app purchases and honor entitlements</li>
+      <li>To respond to your support requests</li>
+      <li>To comply with applicable laws and platform policies</li>
+    </ul>
 
-            <p><strong>3.1 Google AdMob</strong></p>
-            <p>We use Google AdMob to display advertisements. AdMob may collect and process data to show personalized ads based on your interests. For more information, please visit: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party SDKs. Each is bound by its own privacy policy.</p>
 
-            <p><strong>3.2 Firebase Analytics</strong></p>
-            <p>We use Firebase Analytics to understand how users interact with our Services. Firebase collects usage data and device information to help us improve the user experience. For more information, please visit: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></p>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Purpose</th>
+        <th>Data Shared</th>
+        <th>Policy</th>
+      </tr>
+      <tr>
+        <td>Firebase Analytics (Google)</td>
+        <td>Aggregate gameplay analytics</td>
+        <td>App events, device info, approximate region, Advertising ID</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+      </tr>
+      <tr>
+        <td>Firebase Crashlytics (Google)</td>
+        <td>Crash and error reporting</td>
+        <td>Stack traces, device state, app version</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+      </tr>
+      <tr>
+        <td>Google AdMob</td>
+        <td>Rewarded video advertisements (revive, daily rewards, pet hatch acceleration, offline rewards)</td>
+        <td>Advertising ID, ad interaction events, device info, approximate location</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+      </tr>
+      <tr>
+        <td>Google Play Billing</td>
+        <td>In-app purchase processing (supporter pack)</td>
+        <td>Purchase token, product ID (handled by Google Play; we do not collect your payment details)</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+      </tr>
+    </table>
 
-            <p><strong>3.3 Firebase Crashlytics</strong></p>
-            <p>We use Firebase Crashlytics to collect crash reports and error logs. This helps us identify and fix technical issues to improve app stability. Data collected includes:</p>
-            <ul>
-                <li>Crash stack traces and error messages</li>
-                <li>Device model, OS version, and device orientation</li>
-                <li>App state at the time of crash</li>
-                <li>Crashlytics installation UUID (anonymous identifier)</li>
-            </ul>
-            <p>This data is used solely for improving app stability and does not include personally identifiable information.</p>
+    <h2>4. Advertising and Advertising Identifiers</h2>
+    <p>The Services display <strong>rewarded video advertisements</strong> served by Google AdMob. Rewarded ads are presented only when you opt in to them in exchange for specific in-game benefits, including:</p>
+    <ul>
+      <li>Character revival after death</li>
+      <li>Daily free stamina and spirit stones</li>
+      <li>Pet hatching acceleration</li>
+      <li>Offline/idle reward claims</li>
+    </ul>
+    <p>AdMob may use your <strong>Google Advertising ID</strong> to deliver relevant advertisements. You may reset or limit ad tracking at any time via:</p>
+    <p><em>Android Settings → Privacy → Ads → Delete advertising ID</em> (or <em>Opt out of Ads Personalization</em>).</p>
 
-            <p><strong>3.4 Cloud Firestore</strong></p>
-            <p>We use Google Cloud Firestore to store and sync limited app data, such as redemption code validation. This service may process:</p>
-            <ul>
-                <li>Anonymized user identifiers</li>
-                <li>Redemption code usage records</li>
-            </ul>
-            <p>No personal information (such as name, email, or phone number) is stored in Firestore.</p>
+    <h2>5. In-App Purchases</h2>
+    <p>The Services offer a single voluntary in-app purchase: a <strong>Supporter Pack</strong>. All payments are processed by Google Play Billing. We receive a purchase confirmation token so that we can grant you the corresponding in-game benefits, but we <strong>do not</strong> collect or store your credit card number, bank account, or other payment credentials.</p>
 
-            <p><strong>3.5 In-App Purchases</strong></p>
-            <p>In-app purchases are processed through the respective app store (Google Play Store or Apple App Store). We do not directly collect or store your payment information. Please refer to the privacy policies of the respective platforms.</p>
+    <h2>6. Age Suitability</h2>
+    <p>The Services are rated for <strong>all ages</strong> (general audience). We do not knowingly collect personally identifiable information from children. If you believe a child has provided us with personal information, please contact us using the information below and we will take steps to delete it.</p>
 
-            <h2>4. Data Sharing</h2>
-            <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
-            <ul>
-                <li>With service providers who assist in operating our Services</li>
-                <li>With advertising partners (in aggregated or anonymized form)</li>
-                <li>When required by law or legal process</li>
-                <li>To protect our rights, privacy, safety, or property</li>
-            </ul>
+    <h2>7. Data Retention and Deletion</h2>
+    <p>Because your gameplay data is stored locally on your device, deletion can be performed at any time, directly by you:</p>
+    <ul>
+      <li><strong>In-game</strong>: Settings → Delete Account / Reset Progress. This action erases local data immediately and is irreversible.</li>
+      <li><strong>Device-level</strong>: Uninstalling the app removes all local data.</li>
+      <li>Analytics data retained by Firebase/AdMob is governed by Google's retention policies; you may also request deletion by emailing us (see Contact below).</li>
+    </ul>
 
-            <h2>5. Data Retention</h2>
-            <p>We retain your information for as long as necessary to provide our Services and fulfill the purposes described in this policy. When information is no longer needed, we will delete or anonymize it.</p>
+    <h2>8. Data Security</h2>
+    <p>We take reasonable technical and organizational measures to protect information handled through the Services. Because the Services do not require user accounts and store gameplay data on-device, the attack surface for personal data exposure is intentionally minimized.</p>
 
-            <h2>6. Your Rights and Choices</h2>
-            <p>You have the following rights regarding your information:</p>
-            <ul>
-                <li><strong>Opt-out of personalized ads:</strong> You can opt out of personalized advertising by adjusting your device settings or using the opt-out mechanisms provided by ad networks.</li>
-                <li><strong>Access and deletion:</strong> You may request access to or deletion of your personal information by contacting us.</li>
-                <li><strong>Data portability:</strong> Where applicable, you may request a copy of your data in a portable format.</li>
-            </ul>
+    <h2>9. Your Rights</h2>
+    <p>Depending on your jurisdiction (e.g., GDPR in the EEA, CCPA in California, PDPA in Taiwan), you may have the right to:</p>
+    <ul>
+      <li>Access the information we hold about you</li>
+      <li>Request correction or deletion of your data</li>
+      <li>Object to or restrict certain processing activities</li>
+      <li>Withdraw consent previously given</li>
+    </ul>
+    <p>To exercise these rights, please contact us using the email below.</p>
 
-            <h2>7. Children's Privacy</h2>
-            <p>Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+    <h2>10. International Data Transfers</h2>
+    <p>Our third-party service providers may process data in countries other than your own (primarily the United States). By using the Services, you consent to such transfers in accordance with this Privacy Policy.</p>
 
-            <h2>8. Security</h2>
-            <p>We implement reasonable security measures to protect your information. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. Material changes will be communicated through the Services where appropriate.</p>
 
-            <h2>9. International Data Transfers</h2>
-            <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have different data protection laws.</p>
-
-            <h2>10. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
-
-            <h2>11. Contact Us</h2>
-            <div class="contact">
-                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                <p><strong>Email:</strong> rqiu3310@gmail.com</p>
-                <p><strong>Developer:</strong> NoSpoilers</p>
-            </div>
-        </div>
-
-        <hr style="margin: 50px 0; border: none; border-top: 1px solid #eee;">
-
-        <!-- Chinese Version -->
-        <div id="zh">
-            <h1>隱私權政策</h1>
-            <p class="update-date">最後更新日期：2026年4月3日</p>
-
-            <p>NoSpoilers（以下簡稱「我們」）尊重您的隱私。本隱私權政策說明當您使用我們的行動應用程式及服務（統稱「服務」）時，我們如何收集、使用、揭露及保護您的資訊。</p>
-
-            <p>使用我們的服務即表示您同意依照本政策收集和使用資訊。</p>
-
-            <h2>1. 我們收集的資訊</h2>
-
-            <p><strong>1.1 自動收集的資訊</strong></p>
-            <p>當您使用我們的服務時，我們可能自動收集以下資訊：</p>
-            <ul>
-                <li>裝置資訊（裝置型號、作業系統版本、唯一裝置識別碼）</li>
-                <li>使用資料（使用的應用程式功能、工作階段時間、應用程式內操作）</li>
-                <li>廣告識別碼（如 Google 廣告 ID）</li>
-                <li>IP 位址及一般位置（國家或城市層級）</li>
-                <li>應用程式當機記錄、錯誤報告及效能資料</li>
-            </ul>
-
-            <p><strong>1.2 您提供的資訊</strong></p>
-            <p>我們可能收集您自願提供的資訊，例如：</p>
-            <ul>
-                <li>應用程式內購買記錄</li>
-                <li>客戶支援查詢</li>
-                <li>意見回饋及問卷調查回覆</li>
-            </ul>
-
-            <h2>2. 資訊使用方式</h2>
-            <p>我們將收集的資訊用於以下目的：</p>
-            <ul>
-                <li>提供及維護我們的服務</li>
-                <li>處理應用程式內購買及交易</li>
-                <li>顯示廣告（包括個人化廣告）</li>
-                <li>分析使用模式並改善我們的服務</li>
-                <li>識別並修復當機及技術問題</li>
-                <li>偵測及防止詐欺或濫用行為</li>
-                <li>回應客戶支援請求</li>
-                <li>遵守法律義務</li>
-            </ul>
-
-            <h2>3. 第三方服務</h2>
-            <p>我們的服務使用以下可能收集資訊的第三方服務：</p>
-
-            <p><strong>3.1 Google AdMob</strong></p>
-            <p>我們使用 Google AdMob 顯示廣告。AdMob 可能收集並處理資料，以根據您的興趣顯示個人化廣告。如需更多資訊，請造訪：<a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a></p>
-
-            <p><strong>3.2 Firebase Analytics</strong></p>
-            <p>我們使用 Firebase Analytics 了解使用者如何與我們的服務互動。Firebase 會收集使用資料及裝置資訊，幫助我們改善使用者體驗。如需更多資訊，請造訪：<a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隱私權</a></p>
-
-            <p><strong>3.3 Firebase Crashlytics</strong></p>
-            <p>我們使用 Firebase Crashlytics 收集當機報告及錯誤記錄，幫助我們識別並修復技術問題以提升應用程式穩定性。收集的資料包括：</p>
-            <ul>
-                <li>當機堆疊追蹤及錯誤訊息</li>
-                <li>裝置型號、作業系統版本及裝置方向</li>
-                <li>當機時的應用程式狀態</li>
-                <li>Crashlytics 安裝 UUID（匿名識別碼）</li>
-            </ul>
-            <p>這些資料僅用於改善應用程式穩定性，不包含可識別個人身份的資訊。</p>
-
-            <p><strong>3.4 Cloud Firestore</strong></p>
-            <p>我們使用 Google Cloud Firestore 儲存及同步有限的應用程式資料，例如兌換碼驗證。此服務可能處理：</p>
-            <ul>
-                <li>匿名化的使用者識別碼</li>
-                <li>兌換碼使用記錄</li>
-            </ul>
-            <p>Firestore 中不會儲存任何個人資訊（如姓名、電子郵件或電話號碼）。</p>
-
-            <p><strong>3.5 應用程式內購買</strong></p>
-            <p>應用程式內購買透過各應用程式商店（Google Play 商店或 Apple App Store）處理。我們不會直接收集或儲存您的付款資訊。請參閱各平台的隱私權政策。</p>
-
-            <h2>4. 資料分享</h2>
-            <p>我們不會出售您的個人資訊。我們可能在以下情況下分享您的資訊：</p>
-            <ul>
-                <li>與協助營運我們服務的服務供應商分享</li>
-                <li>與廣告合作夥伴分享（以彙總或匿名形式）</li>
-                <li>依法律或法律程序要求時</li>
-                <li>為保護我們的權利、隱私、安全或財產</li>
-            </ul>
-
-            <h2>5. 資料保留</h2>
-            <p>我們會在提供服務及實現本政策所述目的所需的期間內保留您的資訊。當不再需要資訊時，我們會將其刪除或匿名化。</p>
-
-            <h2>6. 您的權利與選擇</h2>
-            <p>您對您的資訊享有以下權利：</p>
-            <ul>
-                <li><strong>退出個人化廣告：</strong>您可以透過調整裝置設定或使用廣告網路提供的退出機制來退出個人化廣告。</li>
-                <li><strong>存取與刪除：</strong>您可以透過聯絡我們請求存取或刪除您的個人資訊。</li>
-                <li><strong>資料可攜性：</strong>在適用情況下，您可以請求以可攜式格式取得您資料的副本。</li>
-            </ul>
-
-            <h2>7. 兒童隱私</h2>
-            <p>我們的服務不針對 13 歲以下兒童。我們不會故意收集 13 歲以下兒童的個人資訊。如果您認為我們無意中收集了此類資訊，請立即與我們聯絡。</p>
-
-            <h2>8. 安全性</h2>
-            <p>我們實施合理的安全措施來保護您的資訊。但是，沒有任何網際網路傳輸或電子儲存方法是 100% 安全的。</p>
-
-            <h2>9. 國際資料傳輸</h2>
-            <p>您的資訊可能會被傳輸到您居住國以外的國家並在那裡處理。這些國家的資料保護法律可能有所不同。</p>
-
-            <h2>10. 政策變更</h2>
-            <p>我們可能會不時更新本隱私權政策。我們會透過在本頁面發布新政策並更新「最後更新日期」來通知您任何變更。</p>
-
-            <h2>11. 聯絡我們</h2>
-            <div class="contact">
-                <p>如果您對本隱私權政策有任何疑問，請透過以下方式聯絡我們：</p>
-                <p><strong>電子郵件：</strong>rqiu3310@gmail.com</p>
-                <p><strong>開發者：</strong>NoSpoilers</p>
-            </div>
-        </div>
+    <h2>12. Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>Developer:</strong> proofhero888</p>
+      <p><strong>Application:</strong> Immortal Pickup! / 我在仙界撿了屍 (<code>com.pickupfairy.game</code>)</p>
+      <p><strong>Email:</strong> <a href="mailto:rqiu3310@gmail.com">rqiu3310@gmail.com</a></p>
+      <p><strong>Address:</strong> No. 359, Beiyi Rd Sec. 2, Xindian District, New Taipei City 231, Taiwan (R.O.C.)</p>
     </div>
+
+  </section>
+
+  <!-- ================= 中文 ================= -->
+  <section id="lang-zh" class="hidden">
+
+    <p>本隱私權政策適用於行動應用程式 <strong>我在仙界撿了屍</strong>（英文版 <strong>Immortal Pickup!</strong>；套件名：<code>com.pickupfairy.game</code>），由 <strong>proofhero888</strong>（以下簡稱「我們」）所開發、發行與營運。您下載、安裝或使用本應用程式（以下簡稱「本服務」）即表示同意本隱私權政策所述之資訊蒐集與使用方式。</p>
+
+    <h2>一、我們蒐集哪些資訊</h2>
+
+    <h3>1.1 自動蒐集的資訊</h3>
+    <p>當您使用本服務時，下列資訊可能被自動蒐集：</p>
+    <ul>
+      <li>裝置資訊（機型、作業系統、語言、螢幕解析度）</li>
+      <li>廣告識別碼（Google Advertising ID）</li>
+      <li>應用程式使用資料（連線次數、功能互動、遊戲內事件與進度）</li>
+      <li>當機紀錄、錯誤回報與效能資料</li>
+      <li>網路資訊（IP 位址，可能用於推估所在國家/地區）</li>
+    </ul>
+
+    <h3>1.2 您主動提供的資訊</h3>
+    <p>本服務不需註冊帳號。下列情況下您可能主動提供資訊：</p>
+    <ul>
+      <li>以電子郵件與我們聯絡（客服、回饋、資料刪除請求）</li>
+      <li>透過 Google Play 計費系統進行應用程式內購買</li>
+    </ul>
+
+    <h3>1.3 本機儲存之遊戲資料</h3>
+    <p>您的遊戲進度（境界、背包、技能藏經閣、靈寵收藏、設定等）<strong>僅儲存在您的裝置上</strong>。我們並未在伺服器端留存副本。</p>
+
+    <h2>二、資訊使用方式</h2>
+    <ul>
+      <li>維運、改善並更新本服務</li>
+      <li>分析遊玩模式、平衡遊戲並規劃後續更新</li>
+      <li>診斷當機並修復錯誤</li>
+      <li>播放獎勵式廣告並衡量其成效</li>
+      <li>處理應用程式內購買並發放對應權益</li>
+      <li>回覆客服與支援請求</li>
+      <li>遵循適用法律與平台政策</li>
+    </ul>
+
+    <h2>三、第三方服務</h2>
+    <p>本服務整合下列第三方 SDK，各服務均依其自身隱私權政策管理。</p>
+    <table>
+      <tr>
+        <th>服務</th>
+        <th>用途</th>
+        <th>共享資料</th>
+        <th>政策</th>
+      </tr>
+      <tr>
+        <td>Firebase Analytics（Google）</td>
+        <td>彙總遊玩分析</td>
+        <td>應用程式事件、裝置資訊、大致地區、廣告識別碼</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">連結</a></td>
+      </tr>
+      <tr>
+        <td>Firebase Crashlytics（Google）</td>
+        <td>當機與錯誤回報</td>
+        <td>堆疊追蹤、裝置狀態、應用版本</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">連結</a></td>
+      </tr>
+      <tr>
+        <td>Google AdMob</td>
+        <td>獎勵式影片廣告（復活、每日獎勵、寵物孵化加速、離線獎勵）</td>
+        <td>廣告識別碼、廣告互動事件、裝置資訊、大致位置</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">連結</a></td>
+      </tr>
+      <tr>
+        <td>Google Play Billing</td>
+        <td>內購處理（支持開發者禮包）</td>
+        <td>購買憑證、商品識別碼（付款細節由 Google Play 處理，我們不蒐集）</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">連結</a></td>
+      </tr>
+    </table>
+
+    <h2>四、廣告與廣告識別碼</h2>
+    <p>本服務透過 Google AdMob 播放<strong>獎勵式影片廣告</strong>。僅在您主動選擇觀看以換取下列遊戲內獎勵時顯示：</p>
+    <ul>
+      <li>角色死亡後的復活機會</li>
+      <li>每日免費體力與靈石</li>
+      <li>靈寵孵化加速</li>
+      <li>離線掛網獎勵領取</li>
+    </ul>
+    <p>AdMob 可能使用您的 <strong>Google Advertising ID</strong> 提供相關廣告。您可隨時重設或限制廣告追蹤：</p>
+    <p><em>Android 設定 → 隱私 → 廣告 → 刪除廣告 ID</em>（或<em>選擇停用廣告個人化</em>）。</p>
+
+    <h2>五、應用程式內購買</h2>
+    <p>本服務僅提供一項自願性內購：<strong>支持開發者禮包</strong>。所有款項均由 Google Play Billing 處理。我們僅收到購買憑證以便發放對應遊戲內權益，<strong>不會</strong>蒐集或儲存您的信用卡號、銀行帳戶或其他付款資料。</p>
+
+    <h2>六、適用年齡</h2>
+    <p>本服務分級為<strong>全年齡適用</strong>（普遍級）。我們不會在知情情況下蒐集兒童的個人可識別資訊。若您認為兒童可能向我們提供了個人資訊，請透過下方聯絡資訊與我們聯繫，我們將採取刪除措施。</p>
+
+    <h2>七、資料保存與刪除</h2>
+    <p>由於遊玩資料儲存在您的裝置上，您可隨時直接刪除：</p>
+    <ul>
+      <li><strong>遊戲內</strong>：設定 → 刪除帳號 / 重置進度。此操作將立即抹除本機資料且不可復原。</li>
+      <li><strong>裝置層級</strong>：解除安裝應用程式將移除所有本機資料。</li>
+      <li>Firebase / AdMob 保留的分析資料依 Google 保存政策處理，您也可寄信請求刪除（見下方聯絡方式）。</li>
+    </ul>
+
+    <h2>八、資料安全</h2>
+    <p>我們採取合理的技術與組織性措施保護本服務處理的資訊。由於本服務不需使用者帳號且遊戲資料僅儲存於本機，個資暴露的攻擊面已被最小化。</p>
+
+    <h2>九、您的權利</h2>
+    <p>依據您所在司法管轄區（例如歐盟 GDPR、加州 CCPA、台灣個資法 PDPA），您可能享有下列權利：</p>
+    <ul>
+      <li>查詢我們所持有您的資訊</li>
+      <li>請求更正或刪除您的資料</li>
+      <li>反對或限制特定處理活動</li>
+      <li>撤回先前同意</li>
+    </ul>
+    <p>如需行使上述權利，請以下方電子郵件與我們聯繫。</p>
+
+    <h2>十、跨境資料傳輸</h2>
+    <p>我們使用之第三方服務供應商可能在您所在國以外的地區（主要為美國）處理資料。使用本服務即表示您同意此類傳輸依本隱私權政策進行。</p>
+
+    <h2>十一、政策變更</h2>
+    <p>我們可能不時更新本隱私權政策。更新時將同步修改頁首「最後更新日期」。重大變更將於本服務中以適當方式通知。</p>
+
+    <h2>十二、聯絡我們</h2>
+    <p>為確保資料正確性與國際一致性，聯絡資訊以英文格式呈現：</p>
+    <div class="contact-box">
+      <p><strong>Developer:</strong> proofhero888</p>
+      <p><strong>Application:</strong> Immortal Pickup! / 我在仙界撿了屍 (<code>com.pickupfairy.game</code>)</p>
+      <p><strong>Email:</strong> <a href="mailto:rqiu3310@gmail.com">rqiu3310@gmail.com</a></p>
+      <p><strong>Address:</strong> No. 359, Beiyi Rd Sec. 2, Xindian District, New Taipei City 231, Taiwan (R.O.C.)</p>
+    </div>
+
+  </section>
+</div>
+
+<script>
+function showLang(code) {
+  document.getElementById('lang-en').classList.toggle('hidden', code !== 'en');
+  document.getElementById('lang-zh').classList.toggle('hidden', code !== 'zh');
+  document.getElementById('btn-en').classList.toggle('active', code === 'en');
+  document.getElementById('btn-zh').classList.toggle('active', code === 'zh');
+}
+</script>
 </body>
 </html>
